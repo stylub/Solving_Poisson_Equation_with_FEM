@@ -1,20 +1,22 @@
-# Solving Poisson Equation with FEM
-### Project made as a part of course Differential and Difference Equations
-## Gravitational Potential
+# Finite Element Method for Solving Poisson's Equation
 
-The second-order differential equation for the gravitational potential Φ(x) is:
+This project is a part of the course on Differential and Difference Equations. It focuses on solving Poisson's equation using the Finite Element Method (FEM).
+
+## Introduction to the Problem: Gravitational Potential
+
+The problem at hand involves solving for the gravitational potential Φ(x), which is governed by the following second-order differential equation:
 
 $$\frac{d^2\Phi}{dx^2} = 4\pi G\rho(x)$$
 
-where:
-- G is the gravitational constant,
-- ρ(x) is the density of the mass distribution.
+In this equation:
+- G represents the gravitational constant.
+- ρ(x) denotes the density distribution of the mass.
 
-Boundary conditions for Φ(x) are as follows:
-- Φ(0) = 5
-- Φ(3) = 4
+We also have the following boundary conditions for Φ(x):
+- At x = 0, Φ(0) = 5
+- At x = 3, Φ(3) = 4
 
-The density function ρ(x) is defined as:
+The density function ρ(x) is defined piecewise as follows:
 
 $$
 \rho(x) = 
@@ -25,5 +27,6 @@ $$
 \end{cases}
 $$
 
+## Resulting function
 
 ![graph (2)](https://github.com/stylub/Solving_Poisson_Equation_with_FEM/assets/47119994/31f0239d-aa58-42fe-bad0-12ae68c37350)
